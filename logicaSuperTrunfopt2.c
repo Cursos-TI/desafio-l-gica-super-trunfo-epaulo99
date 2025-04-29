@@ -62,23 +62,83 @@ int main() {
             printf("População de %s: %d \n População de %s: %d\n", pais1, populacao, pais2, populacao2);
             printf("A carta 1 venceu!!");
 
+        } else {
+
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'População'\n");
+            printf("População de %s: %d \n População de %s: %d\n", pais1, populacao, pais2, populacao2);
+            printf("A carta 2 venceu!!");
         }
         break;
 
     case 2:
-        /* code */
+
+        if( area > area2) {
+
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'Área'\n");
+            printf("Area de %s: %d \n Area de %s: %d\n", pais1, area, pais2, area2);
+            printf("A carta 1 venceu!!");
+
+    } else{
+
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'Área'\n");
+            printf("Area de %s: %d \n Area de %s: %d\n", pais1, area, pais2, area2);
+            printf("A carta 2 venceu!!");
+    }
+
         break;
 
     case 3:
-         /* code */
+        if( pib > pib2) {
+
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'PIB'\n");
+            printf("PIB de %s: %d \n PIB de %s: %d\n", pais1, pib, pais2, pib2);
+            printf("A carta 1 venceu!!");
+
+    } else{
+        printf("País 1: %s e País 2: %s\n", pais1, pais2);
+        printf("O Atributo selecionado foi 'PIB'\n");
+        printf("PIB de %s: %d \n PIB de %s: %d\n", pais1, pib, pais2, pib2);
+        printf("A carta 2 venceu!!");
+
+    }
         break;
 
     case 4:
-        /* code */
+        if( pontoP > pontoP2) {
+
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'Pontos Turisticos'\n");
+            printf("Pontos Turisticos de %s: %d \n Pontos Turisticos de %s: %d\n", pais1, pontoP, pais2, pontoP2);
+            printf("A carta 1 venceu!!");
+
+    } else {
+
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'Pontos Turisticos'\n");
+            printf("Pontos Turisticos de %s: %d \n Pontos Turisticos de %s: %d\n", pais1, pontoP, pais2, pontoP2);
+            printf("A carta 2 venceu!!");
+    }
         break;        
 
     case 5:
+        if( densi > densi2) {
 
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'Densidade'\n");
+            printf("Densidade de %s: %d \n Densidade de %s: %d\n", pais1, densi, pais2, densi2);
+            printf("A carta 1 venceu!!");
+
+    } else{
+
+            printf("País 1: %s e País 2: %s\n", pais1, pais2);
+            printf("O Atributo selecionado foi 'Densidade'\n");
+            printf("Densidade de %s: %d \n Densidade de %s: %d\n", pais1, densi, pais2, densi2);
+            printf("A carta 2 venceu!!");
+    }
         break;
 
     default:
