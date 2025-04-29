@@ -7,6 +7,8 @@
 
 int main() {
 
+
+    //declaração de variaveis e captura de dados para tratamento
     char pais1[20], pais2[20];
     int populacao, populacao2, pontoP2, pontoP, opcao;
     float area, area2, pib, pib2, densi, densi2, pibper, pibper2;
@@ -36,6 +38,7 @@ int main() {
     scanf("%d", &pontoP2);
 
 
+    //calculo de densidade e pibpercapta
     densi = populacao / area;
     densi2 =  populacao2 / area2;
 
@@ -43,6 +46,7 @@ int main() {
     pibper2 = pib2 / populacao2;
 
 
+    //menu swich com seleção de casos
     printf("**Selecione o Atributo para Comparação**\n");
     printf("1. População\n");
     printf("2. Área\n");
@@ -55,6 +59,7 @@ int main() {
     switch (opcao)
     {
     case 1:
+
         if( populacao > populacao2) {
 
             printf("País 1: %s e País 2: %s\n", pais1, pais2);

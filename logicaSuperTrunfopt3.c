@@ -8,7 +8,7 @@
 int main() {
 
     char pais1[20], pais2[20];
-    int populacao, populacao2, pontoP2, pontoP, opcao;
+    int populacao, populacao2, pontoP2, pontoP, opcao; opcao2, resultado1, resultado2;
     float area, area2, pib, pib2, densi, densi2, pibper, pibper2;
 
     printf("Digite os dados da Primeira Carta\n");
@@ -39,11 +39,7 @@ int main() {
     densi = populacao / area;
     densi2 =  populacao2 / area2;
 
-    pibper = pib / populacao;
-    pibper2 = pib2 / populacao2;
-
-
-    printf("**Selecione o Atributo para Comparação**\n");
+    printf("**Selecione 1 Atributo para Comparação**\n");
     printf("1. População\n");
     printf("2. Área\n");
     printf("3. PIB\n");
@@ -51,35 +47,88 @@ int main() {
     printf("5. Densidade Demografica \n");
     scanf("%d", &opcao);
 
+    switch(opcao){
 
-    switch (opcao)
-    {
-    case 1:
+        case 1:
+        printf("O atributo escolhido foi População");
+        resultado1 = populacao > populacao2 ? 1 : 0;
+        break;
+        case 2:
+        printf("O atributo escolhido foi População");
+        resultado1 = area > area2 ? 1 : 0;
+        break;
+        case 3:
+        printf("O atributo escolhido foi População");
+        resultado1 = pib > pib2 ? 1 : 0;
+        break;
+        case 4:
+        printf("O atributo escolhido foi População");
+        resultado1 = pontoP > pontoP2 ? 1 : 0;
+        break;
+        case 5:
+        printf("O atributo escolhido foi População");
+        resultado1 = densi < densi2 ? 1 : 0;
+        break;
+
+        default:
+        printf("Opção Invalida");
+        break;
+
+    }
+
+    printf("**Selecione 2 Atributo para Comparação**\n");
+    printf("**O segundo atributo deve ser diferente do Primeiro**\n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. N Pontos Turisticos \n");
+    printf("5. Densidade Demografica \n");
+    scanf("%d", &opcao2);
+
+
+    if ( opcao != opcao2) {
+
+
+        switch(opcao2){
+
+            case 1:
+            printf("O atributo escolhido foi População");
+            resultado2 = populacao > populacao2 ? 1 : 0;
+            break;
+            case 2:
+            printf("O atributo escolhido foi População");
+            resultado2 = area > area2 ? 1 : 0;
+            break;
+            case 3:
+            printf("O atributo escolhido foi População");
+            resultado2 = pib > pib2 ? 1 : 0;
+            break;
+            case 4:
+            printf("O atributo escolhido foi População");
+            resultado2 = pontoP > pontoP2 ? 1 : 0;
+            break;
+            case 5:
+            printf("O atributo escolhido foi População");
+            resultado2 = densi < densi2 ? 1 : 0;
+            break;
+            default:
+            printf("Opção Invalida");
+            break;
+
 
 
         }
-        break;
 
-    case 2:
-        /* code */
-        break;
 
-    case 3:
-         /* code */
-        break;
 
-    case 4:
-        /* code */
-        break;        
 
-    case 5:
 
-        break;
 
-    default:
-    printf("Opção Invalida!");
-        break;
+    } else {
+
+        printf("Opção Invalida!");
     }
+
 
      
 
